@@ -7,4 +7,4 @@ Este é um formulário interativo, onde o usuário deve selecionar uma opção. 
 - CSS3
 - Figma
 
-![Image](https://github.com/user-attachments/assets/f4e4c97e-6f5f-40f7-8934-e729d6c4036e)
+![Image](https://github.com/user-attachments/assets/1dd8db4a-8260-4403-a902-68d127b51a8e)
