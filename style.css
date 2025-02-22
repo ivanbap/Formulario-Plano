@@ -1,0 +1,141 @@
+/* Resetar CSS */
+html, body {
+    background-color: #DFEBEB;
+    padding: 0px;
+    width: 100%;
+    height: 900px; 
+    font-family: 'Oswald', sans-serif; /*Escolher fonte importada*/
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Container */
+.container {
+    max-width: 726px;
+    height: 800px;
+    margin: 100px auto;
+    background-color: #FFFFFF;
+    padding: 90px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);/* Sombra com deslocamento e desfoque */
+}
+
+/* Titulo */
+.container .titulo-plano{
+    width: 100%;
+    margin-bottom: 57px;
+}
+
+.container .titulo-plano h1{
+    font-family: "Libre Baskerville", serif;
+}
+
+/* Opcoes */
+.opcoes .itens{
+    margin-bottom: 20px;
+    background-color: #F4FAFA;
+    border: 1px solid #BBC1C1;
+    border-radius: 10px;
+    padding: 10px 10px;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+    
+}
+
+.opcoes .itens label,a{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: lighter;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.opcoes .itens p{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: lighter;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    padding-left: 33px;
+    text-align: justify;
+
+}
+
+.opcoes .itens input[type="radio"] { /*opcoes botão do 'radio'*/
+    appearance: none;   
+    border: 1px solid #BBC1C1;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.opcoes .itens input[type="radio"]:checked {
+    background-image: radial-gradient(white 35%, black 40%);/*efeito de cor na bolinha ao selecionar*/
+}
+
+.itens:not(:has(:checked)) {
+    opacity: .6;
+}
+
+.centralizar-titulo {
+    display: flex;
+    gap: 10px;
+}
+/* Termos */
+
+.checkbox-wrapper {
+    display: flex;
+    gap: .8rem;
+        padding: 20px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    appearance: none;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #6B7473;
+    border-radius: 5px;
+    position: relative;
+}
+
+.checkbox-wrapper input[type="checkbox"]:focus {
+    outline: 1px solid black;/*borda ao selecionar termo */
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::before {
+    content: "✓";
+    font-size: 15px;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    background-color: #130F28;
+    padding: 20px;
+    color: white;
+    border: 0;
+    transition: background .2s;/*efeito no botao*/
+    margin-top: 50px;
+}
+  
+button:hover {
+    background-color: #2d235d;
+    cursor: pointer;
+}
+
+small {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
